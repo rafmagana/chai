@@ -4359,7 +4359,7 @@ module.exports = function (obj) {
   var str = inspect(obj)
     , type = Object.prototype.toString.call(obj);
 
-  if (str.length >= 40) {
+  if (str.length >= 40000) {
     if (type === '[object Function]') {
       return !obj.name || obj.name === ''
         ? '[Function]'
